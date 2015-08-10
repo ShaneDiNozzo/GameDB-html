@@ -1,0 +1,28 @@
+{
+  "name": "GameDB",
+  "version": "0.0.1",
+  "authors": [
+    "Sándor Csendes <shanedinozzo@gmail.com>"
+  ],
+  "description": "A webapp that you can use to search information about video games.",
+  "main": "index.html",
+  "keywords": [
+    "gamedb",
+    "polymer",
+    "videogames",
+    "giantbomb"
+  ],
+  "license": "MIT",
+  "homepage": "shanedinozzo.cuccfree.org/gamedb",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "paper-elements": "PolymerElements/paper-elements#~1.0.4",
+    "iron-elements": "PolymerElements/iron-elements#~1.0.3"
+  }
+}
