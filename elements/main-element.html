@@ -1,0 +1,35 @@
+<dom-module id="main-element">
+    <link rel="import" type="css" href="main-element.css">
+    <template>
+
+        <paper-drawer-panel>
+            <paper-header-panel mode="waterfall" drawer>
+                <paper-toolbar class="tall drawerpic">Menu</paper-toolbar>
+
+                <!-- drawer-menu -->
+
+            </paper-header-panel>
+            <paper-header-panel mode="waterfall" main>
+                <paper-toolbar>
+                    <paper-icon-button icon="menu" paper-drawer-toggle></paper-icon-button>
+                    <div class="flex title">GameDB</div>
+                    <paper-icon-button icon="search">search</paper-icon-button>
+                    <paper-progress id="progressbar" class="fit bottom" indeterminate></paper-progress>
+                </paper-toolbar>
+
+                <!-- content -->
+                <game-card></game-card>
+
+            </paper-header-panel>
+        </paper-drawer-panel>
+
+    </template>
+    <script>
+        Polymer({
+            ready: function() {
+                this.$.progressbar.style.display = "none";
+            },
+            is: 'main-element'
+        });
+    </script>
+</dom-module>

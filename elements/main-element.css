@@ -1,0 +1,10 @@
+:host {
+    display: block;
+}
+paper-toolbar {
+    background-color: #212121;
+}
+paper-toolbar.drawerpic {
+    background-image: url("/img/mat-pic.jpg");
+    background-size: 100%;
+}

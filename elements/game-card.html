@@ -1,0 +1,20 @@
+<dom-module id="game-card">
+    <link rel="import" type="css" href="game-card.css">
+    <template>
+
+        <paper-material elevation="2">
+            <h1>{{game-name}}</h1>
+            <p>{{game-desc}}</p>
+            <paper-button on-tap="start" class="game-more-info-button" raised>More info...</paper-button>
+        </paper-material>
+
+    </template>
+    <script>
+        Polymer({
+            is: 'game-card',
+            start: function() {
+                document.querySelector('* /deep/ #progressbar').style.display = "block";
+            }
+        });
+    </script>
+</dom-module>
